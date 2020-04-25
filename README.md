@@ -4,11 +4,30 @@
 ## 安装 
 
 ```php
-composer require sym/sym-baidu-face-laravel dev-master
+composer require sym/sym-baidu-face-laravel
 ```
 #### 发布配置
 ```
 php artisan vendor:publish --tag=config
+```
+
+#### 百度人脸参数 config/baidu-face.php
+```php
+return [
+    'APP_ID'     => '',
+    'API_KEY'    => '',
+    'SECRET_KEY' => '',
+];
+```
+
+#### laravel<=5.8
+```php
+//配置 config/app.php 加载你需要的类
+[
+    'providers'=>[
+        'Sym\BaiduFace\AipFace::class'
+    ]
+];
 ```
 ***
 ## 示例
@@ -25,7 +44,7 @@ $options = [
 'max_face_num'=>1,
 'face_field' => 'age,beauty,expression,face_shape,gender,eye_status,face_type,mask,occlusion,spoofing,quality,landmark,landmark72,angle'
 ];
-$client->detect(base64_encode(file_get_contents($image)), 'BASE64', $options);
+$res = $client->detect(base64_encode(file_get_contents($image)), 'BASE64', $options);
 dd($res);
 
 ```

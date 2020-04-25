@@ -66,10 +66,10 @@ class AipBase {
      * @param string $apiKey
      * @param string $secretKey
      */
-    public function __construct($appId, $apiKey, $secretKey){
+    public function __construct($appId='', $apiKey='', $secretKey=''){
         $this->appId = empty($appId) ? trim(config('baidu-face.APP_ID','')) : $appId;
-        $this->apiKey = empty($apiKey) ? trim(config('baidu-face.APP_ID','')) : $apiKey;
-        $this->secretKey = empty($secretKey) ? trim(config('baidu-face.APP_ID','')) : $secretKey;
+        $this->apiKey = empty($apiKey) ? trim(config('baidu-face.API_KEY','')) : $apiKey;
+        $this->secretKey = empty($secretKey) ? trim(config('baidu-face.SECRET_KEY','')) : $secretKey;
         $this->isCloudUser = null;
         $this->client = new AipHttpClient();
         $this->version = '2_2_16';

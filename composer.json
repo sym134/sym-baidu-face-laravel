@@ -16,10 +16,7 @@
         "laravel": {
             "providers": [
                 "Sym\\BaiduFace\\BaiduFaceServiceProvider"
-            ],
-            "aliases": {
-                "BaiduFace": "Sym\\BaiduFace"
-            }
+            ]
         }
     },
     "autoload": {
