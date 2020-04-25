@@ -1,0 +1,29 @@
+{
+    "name": "sym/sym-baidu-face-laravel",
+    "description": "百度人脸laravel拓展",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "sym",
+            "email": "symok@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sym\\BaiduFace\\BaiduFaceServiceProvider"
+            ],
+            "aliases": {
+                "BaiduFace": "Sym\\BaiduFace"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Sym\\BaiduFace\\": "src/"
+        }
+    }
+}
