@@ -22,10 +22,10 @@ return [
 
 #### laravel<=5.8
 ```php
-//配置 config/app.php 加载你需要的类
+//配置 config/app.php
 [
     'providers'=>[
-        'Sym\BaiduFace\AipFace::class'
+        'Sym\BaiduFace\BaiduFaceServiceProvider::class'
     ]
 ];
 ```
