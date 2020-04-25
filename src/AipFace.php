@@ -16,8 +16,8 @@
 */
 
 
-namespace BaiduFace\Api;
-use BaiduFace\Api\lib\AipBase;
+namespace Sym\BaiduFace;
+use Sym\BaiduFace\lib\AipBase;
 
 
 class AipFace extends AipBase {

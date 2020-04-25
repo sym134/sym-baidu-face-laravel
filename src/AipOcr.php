@@ -15,8 +15,8 @@
 * the License.
 */
 
-namespace BaiduFace\Api;
-use BaiduFace\Api\lib\AipBase;
+namespace Sym\BaiduFace;
+use Sym\BaiduFace\lib\AipBase;
 
 class AipOcr extends AipBase {
 
