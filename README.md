@@ -8,7 +8,7 @@ composer require sym/sym-baidu-face-laravel
 ```
 #### 发布配置
 ```
-php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=baidu-face
 ```
 
 #### 百度人脸参数 config/baidu-face.php
